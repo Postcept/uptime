@@ -49,6 +49,12 @@ jobs:
             curl -fsS -X POST "https://api.postcept.com/v1/internal/reconcile-verifications?limit=200"               -H "X-Internal-Token: $TOKEN" --max-time 300 || echo "re-verify backstop failed"
             curl -fsS -X POST "https://api.postcept.com/v1/internal/reconcile-usage"               -H "X-Internal-Token: $TOKEN" --max-time 120 || echo "usage backstop failed"
           fi
+          # The live canary: a scripted refund lifecycle against each configured
+          # provider sandbox, daily at 06 UTC. The registry's last_verified stamp
+          # comes from these runs.
+          if [ "$minute" -lt 15 ] && [ "$hour" = "06" ]; then
+            curl -fsS -X POST "https://api.postcept.com/v1/internal/canary" -H "X-Internal-Token: $TOKEN" --max-time 300 || echo "canary run failed"
+          fi
       - name: Render the status page
         run: python3 scripts/render_status.py
       - name: Commit history and page
