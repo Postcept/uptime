@@ -27,6 +27,28 @@ jobs:
             end=$(date +%s%3N)
             echo "{\"ts\":\"$ts\",\"endpoint\":\"$ep\",\"status\":$code,\"ms\":$((end-start))}" >> "$file"
           done
+      # The API repo's own scheduled workflow stops firing if that repo sees no
+      # commits for 60 days (GitHub disables cron in inactive repos). This repo
+      # commits every 15 minutes forever, so the platform backstops ride here:
+      # webhook delivery retries hourly, verification re-checks and usage
+      # reconciliation every six hours. No-ops until the INTERNAL_TASK_TOKEN
+      # secret is set to the same value the API holds.
+      - name: Run the platform backstops
+        env:
+          TOKEN: ${{ secrets.INTERNAL_TASK_TOKEN }}
+        run: |
+          if [ -z "${TOKEN:-}" ]; then
+            echo "INTERNAL_TASK_TOKEN not set, skipping backstops"
+            exit 0
+          fi
+          hour=$(date -u +%H); minute=$(date -u +%M)
+          if [ "$minute" -lt 15 ]; then
+            curl -fsS -X POST "https://api.postcept.com/v1/internal/deliver-webhooks?limit=200"               -H "X-Internal-Token: $TOKEN" --max-time 120 || echo "webhook backstop failed"
+          fi
+          if [ "$minute" -lt 15 ] && [ $((10#$hour % 6)) -eq 0 ]; then
+            curl -fsS -X POST "https://api.postcept.com/v1/internal/reconcile-verifications?limit=200"               -H "X-Internal-Token: $TOKEN" --max-time 300 || echo "re-verify backstop failed"
+            curl -fsS -X POST "https://api.postcept.com/v1/internal/reconcile-usage"               -H "X-Internal-Token: $TOKEN" --max-time 120 || echo "usage backstop failed"
+          fi
       - name: Render the status page
         run: python3 scripts/render_status.py
       - name: Commit history and page
