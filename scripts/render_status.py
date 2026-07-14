@@ -31,8 +31,26 @@ def load_probes() -> list[dict]:
     return [p for p in probes if datetime.fromisoformat(p["ts"].replace("Z", "+00:00")) >= cutoff]
 
 
+def observed_span_days(probes: list[dict]) -> float:
+    """How much history actually exists, so the page never claims a window it
+    has not lived through."""
+    if len(probes) < 2:
+        return 0.0
+    first = datetime.fromisoformat(probes[0]["ts"].replace("Z", "+00:00"))
+    last = datetime.fromisoformat(probes[-1]["ts"].replace("Z", "+00:00"))
+    return (last - first).total_seconds() / 86400
+
+
 def render(probes: list[dict]) -> str:
     now = datetime.now(UTC).strftime("%Y-%m-%d %H:%M UTC")
+    span = observed_span_days(probes)
+    window_label = (
+        f"over {WINDOW_DAYS} days"
+        if span >= WINDOW_DAYS - 1
+        else f"since monitoring began ({span:.0f}d ago)"
+        if span >= 2
+        else "since monitoring began"
+    )
     by_endpoint: dict[str, list[dict]] = {}
     for p in probes:
         by_endpoint.setdefault(p["endpoint"], []).append(p)
@@ -113,7 +131,7 @@ def render(probes: list[dict]) -> str:
   that serve production. Every probe is committed to an append-only public history.</p>
 
   <div class="banner {banner_class}">{banner_text}
-    <span class="overall mono">{overall:.2f}% over {WINDOW_DAYS} days · {total} checks</span>
+    <span class="overall mono">{overall:.2f}% {window_label} · {total} checks</span>
   </div>
 
   {"".join(rows)}
