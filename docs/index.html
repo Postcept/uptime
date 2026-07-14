@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Postcept status</title>
+<meta name="description" content="Independent uptime for the Postcept API, probed from outside the infrastructure that serves it.">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: #0B0F14; color: #E6EDF3;
+    font: 16px/1.6 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    padding: 48px 20px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  h1 { font-size: 1.35rem; letter-spacing: -0.02em; }
+  .sub { color: #8B98A5; font-size: 0.9rem; margin-top: 4px; }
+  .banner {
+    margin-top: 28px; padding: 16px 20px; border-radius: 10px;
+    border: 1px solid; font-weight: 600;
+  }
+  .banner.ok { border-color: rgba(34,197,94,.35); background: rgba(34,197,94,.08); color: #22C55E; }
+  .banner.warn { border-color: rgba(245,158,11,.35); background: rgba(245,158,11,.08); color: #F59E0B; }
+  .overall { color: #8B98A5; font-size: 0.85rem; font-weight: 400; float: right; }
+  .row { margin-top: 26px; }
+  .row-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .name { font-weight: 600; }
+  .meta { color: #8B98A5; font-size: 0.8rem; }
+  .ticks { display: flex; gap: 2px; margin-top: 8px; }
+  .tick { flex: 1; height: 26px; border-radius: 2px; min-width: 3px; }
+  .tick.up { background: #1E9E58; }
+  .tick.down { background: #E5484D; }
+  .foot { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(139,152,165,.15);
+          color: #8B98A5; font-size: 0.85rem; }
+  a { color: #E6EDF3; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Postcept status</h1>
+  <p class="sub">Probed every 15 minutes from GitHub's infrastructure, outside the accounts
+  that serve production. Every probe is committed to an append-only public history.</p>
+
+  <div class="banner ok">All systems operational
+    <span class="overall mono">100.00% over 30 days · 81 checks</span>
+  </div>
+
+  <div class="row">
+  <div class="row-head">
+    <span class="name">API</span>
+    <span class="mono meta">100.00% · median 298ms</span>
+  </div>
+  <div class="ticks"><span class="tick up" title="2026-07-12T16:14:05Z · HTTP 200 · 247ms"></span><span class="tick up" title="2026-07-12T17:29:35Z · HTTP 200 · 321ms"></span><span class="tick up" title="2026-07-12T18:31:06Z · HTTP 200 · 298ms"></span><span class="tick up" title="2026-07-12T19:54:33Z · HTTP 200 · 252ms"></span><span class="tick up" title="2026-07-12T21:00:18Z · HTTP 200 · 614ms"></span><span class="tick up" title="2026-07-12T22:09:08Z · HTTP 200 · 295ms"></span><span class="tick up" title="2026-07-12T23:10:56Z · HTTP 200 · 343ms"></span><span class="tick up" title="2026-07-13T00:13:20Z · HTTP 200 · 302ms"></span><span class="tick up" title="2026-07-13T04:05:08Z · HTTP 200 · 285ms"></span><span class="tick up" title="2026-07-13T07:41:58Z · HTTP 200 · 328ms"></span><span class="tick up" title="2026-07-13T10:44:20Z · HTTP 200 · 352ms"></span><span class="tick up" title="2026-07-13T13:10:58Z · HTTP 200 · 270ms"></span><span class="tick up" title="2026-07-13T16:00:06Z · HTTP 200 · 246ms"></span><span class="tick up" title="2026-07-13T18:10:42Z · HTTP 200 · 248ms"></span><span class="tick up" title="2026-07-13T19:52:21Z · HTTP 200 · 287ms"></span><span class="tick up" title="2026-07-13T21:05:47Z · HTTP 200 · 470ms"></span><span class="tick up" title="2026-07-13T22:12:48Z · HTTP 200 · 328ms"></span><span class="tick up" title="2026-07-13T23:16:14Z · HTTP 200 · 262ms"></span><span class="tick up" title="2026-07-14T00:54:56Z · HTTP 200 · 257ms"></span><span class="tick up" title="2026-07-14T04:08:31Z · HTTP 200 · 264ms"></span><span class="tick up" title="2026-07-14T06:27:02Z · HTTP 200 · 332ms"></span><span class="tick up" title="2026-07-14T08:38:59Z · HTTP 200 · 264ms"></span><span class="tick up" title="2026-07-14T10:26:17Z · HTTP 200 · 306ms"></span><span class="tick up" title="2026-07-14T11:58:27Z · HTTP 200 · 390ms"></span><span class="tick up" title="2026-07-14T14:07:17Z · HTTP 200 · 301ms"></span><span class="tick up" title="2026-07-14T15:48:42Z · HTTP 200 · 303ms"></span><span class="tick up" title="2026-07-14T17:22:22Z · HTTP 200 · 252ms"></span></div>
+</div><div class="row">
+  <div class="row-head">
+    <span class="name">Signing keys</span>
+    <span class="mono meta">100.00% · median 202ms</span>
+  </div>
+  <div class="ticks"><span class="tick up" title="2026-07-12T16:14:05Z · HTTP 200 · 166ms"></span><span class="tick up" title="2026-07-12T17:29:35Z · HTTP 200 · 165ms"></span><span class="tick up" title="2026-07-12T18:31:06Z · HTTP 200 · 153ms"></span><span class="tick up" title="2026-07-12T19:54:33Z · HTTP 200 · 153ms"></span><span class="tick up" title="2026-07-12T21:00:18Z · HTTP 200 · 230ms"></span><span class="tick up" title="2026-07-12T22:09:08Z · HTTP 200 · 380ms"></span><span class="tick up" title="2026-07-12T23:10:56Z · HTTP 200 · 155ms"></span><span class="tick up" title="2026-07-13T00:13:20Z · HTTP 200 · 161ms"></span><span class="tick up" title="2026-07-13T04:05:08Z · HTTP 200 · 454ms"></span><span class="tick up" title="2026-07-13T07:41:58Z · HTTP 200 · 226ms"></span><span class="tick up" title="2026-07-13T10:44:20Z · HTTP 200 · 233ms"></span><span class="tick up" title="2026-07-13T13:10:58Z · HTTP 200 · 158ms"></span><span class="tick up" title="2026-07-13T16:00:06Z · HTTP 200 · 202ms"></span><span class="tick up" title="2026-07-13T18:10:42Z · HTTP 200 · 529ms"></span><span class="tick up" title="2026-07-13T19:52:21Z · HTTP 200 · 218ms"></span><span class="tick up" title="2026-07-13T21:05:47Z · HTTP 200 · 188ms"></span><span class="tick up" title="2026-07-13T22:12:48Z · HTTP 200 · 238ms"></span><span class="tick up" title="2026-07-13T23:16:14Z · HTTP 200 · 552ms"></span><span class="tick up" title="2026-07-14T00:54:56Z · HTTP 200 · 531ms"></span><span class="tick up" title="2026-07-14T04:08:31Z · HTTP 200 · 161ms"></span><span class="tick up" title="2026-07-14T06:27:02Z · HTTP 200 · 280ms"></span><span class="tick up" title="2026-07-14T08:38:59Z · HTTP 200 · 170ms"></span><span class="tick up" title="2026-07-14T10:26:17Z · HTTP 200 · 188ms"></span><span class="tick up" title="2026-07-14T11:58:27Z · HTTP 200 · 226ms"></span><span class="tick up" title="2026-07-14T14:07:17Z · HTTP 200 · 219ms"></span><span class="tick up" title="2026-07-14T15:48:42Z · HTTP 200 · 182ms"></span><span class="tick up" title="2026-07-14T17:22:22Z · HTTP 200 · 186ms"></span></div>
+</div><div class="row">
+  <div class="row-head">
+    <span class="name">Transparency log</span>
+    <span class="mono meta">100.00% · median 238ms</span>
+  </div>
+  <div class="ticks"><span class="tick up" title="2026-07-12T16:14:05Z · HTTP 200 · 347ms"></span><span class="tick up" title="2026-07-12T17:29:35Z · HTTP 200 · 180ms"></span><span class="tick up" title="2026-07-12T18:31:06Z · HTTP 200 · 376ms"></span><span class="tick up" title="2026-07-12T19:54:33Z · HTTP 200 · 181ms"></span><span class="tick up" title="2026-07-12T21:00:18Z · HTTP 200 · 248ms"></span><span class="tick up" title="2026-07-12T22:09:08Z · HTTP 200 · 197ms"></span><span class="tick up" title="2026-07-12T23:10:56Z · HTTP 200 · 195ms"></span><span class="tick up" title="2026-07-13T00:13:20Z · HTTP 200 · 183ms"></span><span class="tick up" title="2026-07-13T04:05:08Z · HTTP 200 · 221ms"></span><span class="tick up" title="2026-07-13T07:41:58Z · HTTP 200 · 238ms"></span><span class="tick up" title="2026-07-13T10:44:20Z · HTTP 200 · 250ms"></span><span class="tick up" title="2026-07-13T13:10:58Z · HTTP 200 · 181ms"></span><span class="tick up" title="2026-07-13T16:00:06Z · HTTP 200 · 202ms"></span><span class="tick up" title="2026-07-13T18:10:42Z · HTTP 200 · 223ms"></span><span class="tick up" title="2026-07-13T19:52:21Z · HTTP 200 · 559ms"></span><span class="tick up" title="2026-07-13T21:05:47Z · HTTP 200 · 426ms"></span><span class="tick up" title="2026-07-13T22:12:48Z · HTTP 200 · 238ms"></span><span class="tick up" title="2026-07-13T23:16:14Z · HTTP 200 · 229ms"></span><span class="tick up" title="2026-07-14T00:54:56Z · HTTP 200 · 558ms"></span><span class="tick up" title="2026-07-14T04:08:31Z · HTTP 200 · 201ms"></span><span class="tick up" title="2026-07-14T06:27:02Z · HTTP 200 · 243ms"></span><span class="tick up" title="2026-07-14T08:38:59Z · HTTP 200 · 356ms"></span><span class="tick up" title="2026-07-14T10:26:17Z · HTTP 200 · 179ms"></span><span class="tick up" title="2026-07-14T11:58:27Z · HTTP 200 · 253ms"></span><span class="tick up" title="2026-07-14T14:07:17Z · HTTP 200 · 253ms"></span><span class="tick up" title="2026-07-14T15:48:42Z · HTTP 200 · 352ms"></span><span class="tick up" title="2026-07-14T17:22:22Z · HTTP 200 · 361ms"></span></div>
+</div>
+
+  <p class="foot">
+    Last check 2026-07-14 18:52 UTC ·
+    <a href="https://github.com/Postcept/uptime/tree/main/history">raw history (JSONL)</a> ·
+    <a href="https://github.com/Postcept/uptime">how this works</a> ·
+    <a href="https://postcept.com">postcept.com</a>
+  </p>
+</div>
+</body>
+</html>
