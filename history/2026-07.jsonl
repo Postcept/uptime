@@ -568,3 +568,6 @@
 {"ts":"2026-07-26T15:32:15Z","endpoint":"readyz","status":200,"ms":325}
 {"ts":"2026-07-26T15:32:15Z","endpoint":"v1/signing-key","status":200,"ms":199}
 {"ts":"2026-07-26T15:32:15Z","endpoint":"v1/transparency/sth","status":200,"ms":222}
+{"ts":"2026-07-26T16:38:10Z","endpoint":"readyz","status":200,"ms":305}
+{"ts":"2026-07-26T16:38:10Z","endpoint":"v1/signing-key","status":200,"ms":522}
+{"ts":"2026-07-26T16:38:10Z","endpoint":"v1/transparency/sth","status":200,"ms":224}
