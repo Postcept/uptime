@@ -88,3 +88,6 @@
 {"ts":"2026-08-02T23:15:39Z","endpoint":"readyz","status":200,"ms":306}
 {"ts":"2026-08-02T23:15:39Z","endpoint":"v1/signing-key","status":200,"ms":376}
 {"ts":"2026-08-02T23:15:39Z","endpoint":"v1/transparency/sth","status":200,"ms":185}
+{"ts":"2026-08-03T01:08:09Z","endpoint":"readyz","status":200,"ms":235}
+{"ts":"2026-08-03T01:08:09Z","endpoint":"v1/signing-key","status":200,"ms":158}
+{"ts":"2026-08-03T01:08:09Z","endpoint":"v1/transparency/sth","status":200,"ms":186}
