@@ -643,3 +643,6 @@
 {"ts":"2026-08-13T21:54:08Z","endpoint":"readyz","status":200,"ms":374}
 {"ts":"2026-08-13T21:54:08Z","endpoint":"v1/signing-key","status":200,"ms":222}
 {"ts":"2026-08-13T21:54:08Z","endpoint":"v1/transparency/sth","status":200,"ms":234}
+{"ts":"2026-08-13T22:52:05Z","endpoint":"readyz","status":200,"ms":388}
+{"ts":"2026-08-13T22:52:05Z","endpoint":"v1/signing-key","status":200,"ms":191}
+{"ts":"2026-08-13T22:52:05Z","endpoint":"v1/transparency/sth","status":200,"ms":203}
