@@ -823,3 +823,6 @@
 {"ts":"2026-08-15T21:58:27Z","endpoint":"readyz","status":200,"ms":324}
 {"ts":"2026-08-15T21:58:27Z","endpoint":"v1/signing-key","status":200,"ms":263}
 {"ts":"2026-08-15T21:58:27Z","endpoint":"v1/transparency/sth","status":200,"ms":578}
+{"ts":"2026-08-15T22:32:16Z","endpoint":"readyz","status":200,"ms":313}
+{"ts":"2026-08-15T22:32:16Z","endpoint":"v1/signing-key","status":200,"ms":207}
+{"ts":"2026-08-15T22:32:16Z","endpoint":"v1/transparency/sth","status":200,"ms":237}
