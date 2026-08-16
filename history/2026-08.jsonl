@@ -913,3 +913,6 @@
 {"ts":"2026-08-16T17:35:50Z","endpoint":"readyz","status":200,"ms":277}
 {"ts":"2026-08-16T17:35:50Z","endpoint":"v1/signing-key","status":200,"ms":212}
 {"ts":"2026-08-16T17:35:50Z","endpoint":"v1/transparency/sth","status":200,"ms":221}
+{"ts":"2026-08-16T17:58:13Z","endpoint":"readyz","status":200,"ms":305}
+{"ts":"2026-08-16T17:58:13Z","endpoint":"v1/signing-key","status":200,"ms":151}
+{"ts":"2026-08-16T17:58:13Z","endpoint":"v1/transparency/sth","status":200,"ms":181}
