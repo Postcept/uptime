@@ -1033,3 +1033,6 @@
 {"ts":"2026-08-17T20:46:04Z","endpoint":"readyz","status":200,"ms":336}
 {"ts":"2026-08-17T20:46:04Z","endpoint":"v1/signing-key","status":200,"ms":213}
 {"ts":"2026-08-17T20:46:04Z","endpoint":"v1/transparency/sth","status":200,"ms":187}
+{"ts":"2026-08-17T21:32:05Z","endpoint":"readyz","status":200,"ms":324}
+{"ts":"2026-08-17T21:32:05Z","endpoint":"v1/signing-key","status":200,"ms":254}
+{"ts":"2026-08-17T21:32:05Z","endpoint":"v1/transparency/sth","status":200,"ms":271}
