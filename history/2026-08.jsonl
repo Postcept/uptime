@@ -1213,3 +1213,6 @@
 {"ts":"2026-08-19T17:32:22Z","endpoint":"readyz","status":200,"ms":558}
 {"ts":"2026-08-19T17:32:22Z","endpoint":"v1/signing-key","status":200,"ms":199}
 {"ts":"2026-08-19T17:32:22Z","endpoint":"v1/transparency/sth","status":200,"ms":204}
+{"ts":"2026-08-19T18:01:00Z","endpoint":"readyz","status":200,"ms":567}
+{"ts":"2026-08-19T18:01:00Z","endpoint":"v1/signing-key","status":200,"ms":162}
+{"ts":"2026-08-19T18:01:00Z","endpoint":"v1/transparency/sth","status":200,"ms":184}
