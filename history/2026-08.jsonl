@@ -1258,3 +1258,6 @@
 {"ts":"2026-08-20T04:54:51Z","endpoint":"readyz","status":200,"ms":304}
 {"ts":"2026-08-20T04:54:51Z","endpoint":"v1/signing-key","status":200,"ms":229}
 {"ts":"2026-08-20T04:54:51Z","endpoint":"v1/transparency/sth","status":200,"ms":266}
+{"ts":"2026-08-20T05:36:53Z","endpoint":"readyz","status":200,"ms":434}
+{"ts":"2026-08-20T05:36:53Z","endpoint":"v1/signing-key","status":200,"ms":164}
+{"ts":"2026-08-20T05:36:53Z","endpoint":"v1/transparency/sth","status":200,"ms":178}
