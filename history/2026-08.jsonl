@@ -1300,3 +1300,6 @@
 {"ts":"2026-08-20T15:42:02Z","endpoint":"readyz","status":200,"ms":727}
 {"ts":"2026-08-20T15:42:02Z","endpoint":"v1/signing-key","status":200,"ms":240}
 {"ts":"2026-08-20T15:42:02Z","endpoint":"v1/transparency/sth","status":200,"ms":572}
+{"ts":"2026-08-20T16:15:08Z","endpoint":"readyz","status":200,"ms":268}
+{"ts":"2026-08-20T16:15:08Z","endpoint":"v1/signing-key","status":200,"ms":544}
+{"ts":"2026-08-20T16:15:08Z","endpoint":"v1/transparency/sth","status":200,"ms":257}
