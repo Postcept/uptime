@@ -1513,3 +1513,6 @@
 {"ts":"2026-08-22T17:38:28Z","endpoint":"readyz","status":200,"ms":281}
 {"ts":"2026-08-22T17:38:28Z","endpoint":"v1/signing-key","status":200,"ms":219}
 {"ts":"2026-08-22T17:38:28Z","endpoint":"v1/transparency/sth","status":200,"ms":237}
+{"ts":"2026-08-22T17:59:09Z","endpoint":"readyz","status":200,"ms":270}
+{"ts":"2026-08-22T17:59:09Z","endpoint":"v1/signing-key","status":200,"ms":153}
+{"ts":"2026-08-22T17:59:09Z","endpoint":"v1/transparency/sth","status":200,"ms":183}
