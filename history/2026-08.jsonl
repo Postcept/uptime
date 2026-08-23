@@ -1603,3 +1603,6 @@
 {"ts":"2026-08-23T13:39:43Z","endpoint":"readyz","status":200,"ms":308}
 {"ts":"2026-08-23T13:39:43Z","endpoint":"v1/signing-key","status":200,"ms":148}
 {"ts":"2026-08-23T13:39:43Z","endpoint":"v1/transparency/sth","status":200,"ms":175}
+{"ts":"2026-08-23T14:02:20Z","endpoint":"readyz","status":200,"ms":586}
+{"ts":"2026-08-23T14:02:20Z","endpoint":"v1/signing-key","status":200,"ms":205}
+{"ts":"2026-08-23T14:02:20Z","endpoint":"v1/transparency/sth","status":200,"ms":239}
