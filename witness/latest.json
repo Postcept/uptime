@@ -1,7 +1,7 @@
 {
- "checkpoint_digest": "4d757815e09ca7119c97c11e4dc88090c3ebe75c68d19ab558d5d5a9dac88d03",
+ "checkpoint_digest": "655477e8ad7de8fdd3e0f47412c069fb21cb327ec30e48c995c84cce55bf9099",
  "tree_size": 1,
  "root_hash": "1572f6f16404e1dd866300803c8bdd8681c38850fa0c543009f2b58d29339caf",
- "rekor_log_index": "2582183056",
- "bundle": "witness/2026-08/1-4d757815e09ca7119c97c11e4dc88090c3ebe75c68d19ab558d5d5a9dac88d03.bundle.json"
+ "rekor_log_index": "2582204444",
+ "bundle": "witness/2026-08/1-655477e8ad7de8fdd3e0f47412c069fb21cb327ec30e48c995c84cce55bf9099.bundle.json"
 }
