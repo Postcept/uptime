@@ -1843,3 +1843,6 @@
 {"ts":"2026-08-26T04:18:43Z","endpoint":"readyz","status":200,"ms":425}
 {"ts":"2026-08-26T04:18:43Z","endpoint":"v1/signing-key","status":200,"ms":186}
 {"ts":"2026-08-26T04:18:43Z","endpoint":"v1/transparency/sth","status":200,"ms":240}
+{"ts":"2026-08-26T05:07:13Z","endpoint":"readyz","status":200,"ms":448}
+{"ts":"2026-08-26T05:07:13Z","endpoint":"v1/signing-key","status":200,"ms":412}
+{"ts":"2026-08-26T05:07:13Z","endpoint":"v1/transparency/sth","status":200,"ms":230}
