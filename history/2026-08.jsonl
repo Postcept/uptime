@@ -1948,3 +1948,6 @@
 {"ts":"2026-08-31T15:29:51Z","endpoint":"readyz","status":200,"ms":292}
 {"ts":"2026-08-31T15:29:51Z","endpoint":"v1/signing-key","status":200,"ms":421}
 {"ts":"2026-08-31T15:29:51Z","endpoint":"v1/transparency/sth","status":200,"ms":243}
+{"ts":"2026-08-31T21:03:07Z","endpoint":"readyz","status":200,"ms":336}
+{"ts":"2026-08-31T21:03:07Z","endpoint":"v1/signing-key","status":200,"ms":224}
+{"ts":"2026-08-31T21:03:07Z","endpoint":"v1/transparency/sth","status":200,"ms":510}
