@@ -139,3 +139,6 @@
 {"ts":"2026-09-07T10:23:24Z","endpoint":"readyz","status":200,"ms":520}
 {"ts":"2026-09-07T10:23:24Z","endpoint":"v1/signing-key","status":200,"ms":217}
 {"ts":"2026-09-07T10:23:24Z","endpoint":"v1/transparency/sth","status":200,"ms":209}
+{"ts":"2026-09-07T16:00:09Z","endpoint":"readyz","status":200,"ms":386}
+{"ts":"2026-09-07T16:00:09Z","endpoint":"v1/signing-key","status":200,"ms":383}
+{"ts":"2026-09-07T16:00:09Z","endpoint":"v1/transparency/sth","status":200,"ms":211}
